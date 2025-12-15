@@ -1,0 +1,27 @@
+$primary-color: #4a6fa5;
+$secondary-color: #166088;
+$accent-color: #32a852;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+$gray-color: #6c757d;
+$light-gray: #e9ecef;
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+$transition: all 0.3s ease;
+$border-radius: 8px;
+$max-width: 1200px;
+$header-height: 80px;
+
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --accent-color: #{$accent-color};
+    --light-color: #{$light-color};
+    --dark-color: #{$dark-color};
+    --gray-color: #{$gray-color};
+    --light-gray: #{$light-gray};
+    --shadow: #{$shadow};
+    --transition: #{$transition};
+    --border-radius: #{$border-radius};
+    --max-width: #{$max-width};
+    --header-height: #{$header-height};
+}

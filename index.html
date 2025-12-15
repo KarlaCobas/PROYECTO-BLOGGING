@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/CSS/main.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-blog logo-icon"></i>
+                BlogDigital
+            </a>
+            
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Artículos</a></li>
+                    <li class="nav-item"><a href="#categories" class="nav-link">Categorías</a></li>
+                    <li class="nav-item"><a href="#authors" class="nav-link">Autores</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Explora el mundo de la tecnología y la creatividad</h1>
+                <p class="hero-text">Descubre artículos sobre desarrollo web, diseño, tendencias digitales y mucho más. Únete a nuestra comunidad de escritores y lectores apasionados por la tecnología.</p>
+                <a href="#blog" class="btn btn-primary">Explorar Artículos</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blog sobre tecnología">
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="250">0</div>
+                    <div class="stat-label">Artículos Publicados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Autores Activos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="15000">0</div>
+                    <div class="stat-label">Lectores Mensuales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label">Categorías</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="section-title">Artículos Recientes</h2>
+            
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <article class="post-card" data-article="1">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Desarrollo web" class="post-image">
+                    <div class="post-content">
+                        <span class="post-category">Desarrollo Web</span>
+                        <h3 class="post-title"><a href="#" class="article-link">Tendencias de Desarrollo Frontend en 2025</a></h3>
+                        <p class="post-excerpt">Exploramos las tecnologías y metodologías que están definiendo el desarrollo frontend este año, desde frameworks hasta herramientas de testing.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 15 Mayo, 2025</span>
+                            <span><i class="far fa-comment"></i> 12 comentarios</span>
+                        </div>
+                        <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+                    </div>
+                </article>
+                
+                <!-- Post 2 -->
+                <article class="post-card" data-article="2">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Diseño UI/UX" class="post-image">
+                    <div class="post-content">
+                        <span class="post-category">Diseño UI/UX</span>
+                        <h3 class="post-title"><a href="#" class="article-link">Principios de Diseño Accesible para Todos</a></h3>
+                        <p class="post-excerpt">Cómo crear interfaces que sean útiles y accesibles para todos los usuarios, independientemente de sus capacidades o limitaciones.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 8 Mayo, 2025</span>
+                            <span><i class="far fa-comment"></i> 8 comentarios</span>
+                        </div>
+                        <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+                    </div>
+                </article>
+                
+                <!-- Post 3 -->
+                <article class="post-card" data-article="3">
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="React" class="post-image">
+                    <div class="post-content">
+                        <span class="post-category">Frameworks</span>
+                        <h3 class="post-title"><a href="#" class="article-link">Optimización de Rendimiento en Aplicaciones React</a></h3>
+                        <p class="post-excerpt">Técnicas avanzadas para mejorar el rendimiento de tus aplicaciones React, desde lazy loading hasta memoización de componentes.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 1 Mayo, 2025</span>
+                            <span><i class="far fa-comment"></i> 15 comentarios</span>
+                        </div>
+                        <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="post-card" data-article="4">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="JavaScript" class="post-image">
+                    <div class="post-content">
+                        <span class="post-category">JavaScript</span>
+                        <h3 class="post-title"><a href="#" class="article-link">Novedades de ES2025 para Desarrolladores</a></h3>
+                        <p class="post-excerpt">Un vistazo a las nuevas características de JavaScript que llegarán con ES2025 y cómo puedes empezar a usarlas hoy.</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> 22 Abril, 2025</span>
+                            <span><i class="far fa-comment"></i> 9 comentarios</span>
+                        </div>
+                        <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+                    </div>
+                </article>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="#" class="btn btn-outline">Ver Todos los Artículos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autores Destacados -->
+    <section class="authors-section" id="authors">
+        <div class="container">
+            <h2 class="section-title">Autores Destacados</h2>
+            
+            <div class="authors-grid">
+                <div class="author-card">
+                    <img src="assets/images.jpg" alt="Carlos Rodríguez" class="author-avatar">
+                    <h3 class="author-name">Carlos Rodríguez</h3>
+                    <p class="author-role">Desarrollador Frontend Senior</p>
+                    <p class="author-bio">Especializado en React y Vue.js con más de 8 años de experiencia. Apasionado por la accesibilidad web.</p>
+                    <a href="#" class="btn btn-outline">Ver Artículos</a>
+                </div>
+                
+                <div class="author-card">
+                    <img src="assets/1600w-CBK6b64Ms7w.jpg" alt="Laura Méndez" class="author-avatar">
+                    <h3 class="author-name">Laura Méndez</h3>
+                    <p class="author-role">Diseñadora UX/UI</p>
+                    <p class="author-bio">Con 6 años de experiencia en diseño de interfaces y experiencia de usuario. Enfoque en diseño centrado en el usuario.</p>
+                    <a href="#" class="btn btn-outline">Ver Artículos</a>
+                </div>
+                
+                <div class="author-card">
+                    <img src="assets/images2.jpg" alt="Miguel Torres" class="author-avatar">
+                    <h3 class="author-name">Miguel Torres</h3>
+                    <p class="author-role">Arquitecto de Software</p>
+                    <p class="author-bio">Experto en backend con Node.js y Python. Más de 10 años diseñando sistemas escalables y robustos.</p>
+                    <a href="#" class="btn btn-outline">Ver Artículos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Categorías y Sidebar -->
+<section class="categories-section" id="categories">
+    <div class="container">
+        <h2 class="section-title">Categorías Populares</h2>
+        
+        <div class="categories-sidebar-wrapper">
+            <div>
+                <div class="posts-grid">
+                    <!-- Post 5 -->
+                    <article class="post-card" data-article="5">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Node.js" class="post-image">
+                        <div class="post-content">
+                            <span class="post-category">Backend</span>
+                            <h3 class="post-title"><a href="#" class="article-link">Construyendo APIs RESTful con Node.js y Express</a></h3>
+                            <p class="post-excerpt">Guía completa para desarrollar APIs robustas y escalables utilizando Node.js y Express, con buenas prácticas y patrones de diseño.</p>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> 24 Abril, 2025</span>
+                                <span><i class="far fa-comment"></i> 10 comentarios</span>
+                            </div>
+                            <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 6 -->
+                    <article class="post-card" data-article="6">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Data Science" class="post-image">
+                        <div class="post-content">
+                            <span class="post-category">Ciencia de Datos</span>
+                            <h3 class="post-title"><a href="#" class="article-link">Introducción al Machine Learning para Desarrolladores</a></h3>
+                            <p class="post-excerpt">Conceptos fundamentales de machine learning aplicados al desarrollo de software, con ejemplos prácticos y librerías populares.</p>
+                            <div class="post-meta">
+                                <span><i class="far fa-calendar"></i> 17 Abril, 2025</span>
+                                <span><i class="far fa-comment"></i> 7 comentarios</span>
+                            </div>
+                            <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar-sticky-container">
+                <div class="sidebar">
+                    <h3 class="sidebar-title">Categorías</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Diseño UI/UX</a></li>
+                        <li><a href="#">Frameworks JavaScript</a></li>
+                        <li><a href="#">Backend Development</a></li>
+                        <li><a href="#">Ciencia de Datos</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Seguridad Informática</a></li>
+                        <li><a href="#">Cloud Computing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar">
+                    <h3 class="sidebar-title">Artículos Populares</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#" class="article-link">10 Herramientas Esenciales para Desarrolladores en 2025</a></li>
+                        <li><a href="#" class="article-link">Cómo Mejorar el SEO de Tu Aplicación Web</a></li>
+                        <li><a href="#" class="article-link">Guía Completa de Flexbox y CSS Grid</a></li>
+                        <li><a href="#" class="article-link">Introducción a Docker para Desarrolladores</a></li>
+                        <li><a href="#" class="article-link">Buenas Prácticas de Código Limpio en JavaScript</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar">
+                    <h3 class="sidebar-title">Tags Populares</h3>
+                    <div class="tags-container">
+                        <a href="#" class="tag">JavaScript</a>
+                        <a href="#" class="tag">React</a>
+                        <a href="#" class="tag">CSS</a>
+                        <a href="#" class="tag">Node.js</a>
+                        <a href="#" class="tag">Python</a>
+                        <a href="#" class="tag">Diseño</a>
+                        <a href="#" class="tag">Accesibilidad</a>
+                        <a href="#" class="tag">API</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="container newsletter-container">
+            <h2 class="newsletter-title">Suscríbete a Nuestro Newsletter</h2>
+            <p class="newsletter-text">Recibe los últimos artículos, tutoriales y noticias sobre tecnología directamente en tu correo. Sin spam, solo contenido de calidad.</p>
+            
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div>
+                    <a href="#" class="footer-logo">BlogDigital</a>
+                    <p class="footer-text">Un espacio para compartir conocimiento sobre desarrollo web, diseño y tecnología. Creemos en el poder de compartir ideas para impulsar la innovación.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#blog">Artículos</a></li>
+                        <li><a href="#categories">Categorías</a></li>
+                        <li><a href="#authors">Autores</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Diseño UI/UX</a></li>
+                        <li><a href="#">Backend</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Ciencia de Datos</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@blogdigital.com</li>
+                        <li><i class="fas fa-phone"></i> +34 912 345 678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Madrid, España</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 BlogDigital. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para artículos -->
+    <div class="modal-overlay" id="articleModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            
+            <div class="modal-header">
+                <span class="modal-category" id="modalCategory">Desarrollo Web</span>
+                <h2 class="modal-title" id="modalTitle">Tendencias de Desarrollo Frontend en 2025</h2>
+                <div class="modal-meta">
+                    <span><i class="far fa-calendar"></i> <span id="modalDate">15 Mayo, 2025</span></span>
+                    <span><i class="far fa-user"></i> <span id="modalAuthor">Carlos Rodríguez</span></span>
+                    <span><i class="far fa-comment"></i> <span id="modalComments">12 comentarios</span></span>
+                </div>
+            </div>
+            
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Imagen del artículo" class="modal-image" id="modalImage">
+                
+                <div class="modal-content" id="modalContent">
+                    <p>El desarrollo frontend continúa evolucionando a un ritmo acelerado, y 2025 no es la excepción. En este artículo exploramos las tendencias más importantes que están moldeando el futuro del desarrollo web.</p>
+                    
+                    <h3>Frameworks y Librerías</h3>
+                    <p>React, Vue.js y Angular siguen dominando el ecosistema frontend, pero cada vez vemos más adopción de frameworks más nuevos como Svelte y Solid.js, que prometen mejor rendimiento y una experiencia de desarrollo más simple.</p>
+                    
+                    <h3>Herramientas de Desarrollo</h3>
+                    <p>Vite se ha consolidado como el bundler preferido por muchos desarrolladores, reemplazando a Webpack en muchos proyectos nuevos gracias a su velocidad y configuración simplificada.</p>
+                    
+                    <p>Además, TypeScript continúa ganando popularidad, con más del 80% de los desarrolladores encuestados indicando que lo utilizan en sus proyectos principales.</p>
+                    
+                    <p>Estas son solo algunas de las tendencias que están definiendo el desarrollo frontend en 2025. Para mantenerse competitivo, es crucial estar al tanto de estas evoluciones y adaptarse continuamente.</p>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="closeModal">Cerrar</button>
+                <a href="#" class="btn btn-primary" id="fullArticleLink">Leer Artículo Completo</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
