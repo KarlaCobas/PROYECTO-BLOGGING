@@ -1,25 +1,31 @@
 .newsletter-section {
-    padding: 5rem 0;
+    @include section-padding;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: white;
-    text-align: center;
+    text-align: center; 
 }
 
 .newsletter-container {
     max-width: 700px;
     margin: 0 auto;
+    @include center-content;
 }
 
 .newsletter-title {
     font-size: 2.2rem;
     margin-bottom: 1.5rem;
     color: white;
+    text-align: center;
 }
 
 .newsletter-text {
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
     opacity: 0.9;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .newsletter-form {
@@ -27,6 +33,11 @@
     gap: 1rem;
     max-width: 600px;
     margin: 0 auto;
+    width: 100%;
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .newsletter-input {
@@ -36,4 +47,9 @@
     border: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
+    text-align: center;
+    
+    &::placeholder {
+        text-align: center;
+    }
 }

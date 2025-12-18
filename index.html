@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Digital</title>
+    <title>Blog Digital | Ideas y Tecnología</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/CSS/main.css">
-   
 </head>
 <body>
     <!-- Header -->
@@ -27,10 +26,9 @@
             <nav class="main-nav" id="mainNav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item"><a href="#blog" class="nav-link">Artículos</a></li>
+                    <li class="nav-item"><a href="#news-timeline" class="nav-link">Noticias</a></li>
                     <li class="nav-item"><a href="#categories" class="nav-link">Categorías</a></li>
                     <li class="nav-item"><a href="#authors" class="nav-link">Autores</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">Nosotros</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
@@ -75,75 +73,199 @@
         </div>
     </section>
 
-    <!-- Blog Posts -->
-    <section class="blog-section" id="blog">
+    <!-- Sección de Noticias en Miniatura (nueva) -->
+    <section class="mini-news-section">
         <div class="container">
-            <h2 class="section-title">Artículos Recientes</h2>
-            
-            <div class="posts-grid">
-                <!-- Post 1 -->
-                <article class="post-card" data-article="1">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Desarrollo web" class="post-image">
-                    <div class="post-content">
-                        <span class="post-category">Desarrollo Web</span>
-                        <h3 class="post-title"><a href="#" class="article-link">Tendencias de Desarrollo Frontend en 2025</a></h3>
-                        <p class="post-excerpt">Exploramos las tecnologías y metodologías que están definiendo el desarrollo frontend este año, desde frameworks hasta herramientas de testing.</p>
-                        <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> 15 Mayo, 2025</span>
-                            <span><i class="far fa-comment"></i> 12 comentarios</span>
-                        </div>
-                        <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+            <h2 class="section-title">Noticias Destacadas</h2>
+            <div class="mini-news-grid">
+                <!-- Noticia 1 -->
+                <div class="mini-news-card">
+                    <div class="mini-news-icon">
+                        <i class="fas fa-rocket"></i>
                     </div>
-                </article>
+                    <div class="mini-news-content">
+                        <h3 class="mini-news-title">Lanzamiento de Nueva Versión de React</h3>
+                        <p class="mini-news-excerpt">React 19 trae mejoras significativas en el rendimiento y nuevas APIs para desarrolladores.</p>
+                        <div class="mini-news-time">
+                            <i class="far fa-clock"></i> Hace 2 horas
+                        </div>
+                    </div>
+                </div>
                 
-                <!-- Post 2 -->
-                <article class="post-card" data-article="2">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Diseño UI/UX" class="post-image">
-                    <div class="post-content">
-                        <span class="post-category">Diseño UI/UX</span>
-                        <h3 class="post-title"><a href="#" class="article-link">Principios de Diseño Accesible para Todos</a></h3>
-                        <p class="post-excerpt">Cómo crear interfaces que sean útiles y accesibles para todos los usuarios, independientemente de sus capacidades o limitaciones.</p>
-                        <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> 8 Mayo, 2025</span>
-                            <span><i class="far fa-comment"></i> 8 comentarios</span>
-                        </div>
-                        <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+                <!-- Noticia 2 -->
+                <div class="mini-news-card">
+                    <div class="mini-news-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                </article>
+                    <div class="mini-news-content">
+                        <h3 class="mini-news-title">Tendencias de IA para 2025</h3>
+                        <p class="mini-news-excerpt">Los modelos generativos continuarán dominando el panorama tecnológico este año.</p>
+                        <div class="mini-news-time">
+                            <i class="far fa-clock"></i> Hace 5 horas
+                        </div>
+                    </div>
+                </div>
                 
-                <!-- Post 3 -->
-                <article class="post-card" data-article="3">
-                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="React" class="post-image">
-                    <div class="post-content">
-                        <span class="post-category">Frameworks</span>
-                        <h3 class="post-title"><a href="#" class="article-link">Optimización de Rendimiento en Aplicaciones React</a></h3>
-                        <p class="post-excerpt">Técnicas avanzadas para mejorar el rendimiento de tus aplicaciones React, desde lazy loading hasta memoización de componentes.</p>
-                        <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> 1 Mayo, 2025</span>
-                            <span><i class="far fa-comment"></i> 15 comentarios</span>
-                        </div>
-                        <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
+                <!-- Noticia 3 -->
+                <div class="mini-news-card">
+                    <div class="mini-news-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                </article>
-
-                <!-- Post 4 -->
-                <article class="post-card" data-article="4">
-                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="JavaScript" class="post-image">
-                    <div class="post-content">
-                        <span class="post-category">JavaScript</span>
-                        <h3 class="post-title"><a href="#" class="article-link">Novedades de ES2025 para Desarrolladores</a></h3>
-                        <p class="post-excerpt">Un vistazo a las nuevas características de JavaScript que llegarán con ES2025 y cómo puedes empezar a usarlas hoy.</p>
-                        <div class="post-meta">
-                            <span><i class="far fa-calendar"></i> 22 Abril, 2025</span>
-                            <span><i class="far fa-comment"></i> 9 comentarios</span>
+                    <div class="mini-news-content">
+                        <h3 class="mini-news-title">Nuevas Vulnerabilidades en WordPress</h3>
+                        <p class="mini-news-excerpt">Se han descubierto vulnerabilidades críticas en plugins populares de WordPress.</p>
+                        <div class="mini-news-time">
+                            <i class="far fa-clock"></i> Ayer
                         </div>
-                        <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
                     </div>
-                </article>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Sección de Timeline de Noticias (nueva) -->
+    <section class="timeline-section" id="news-timeline">
+        <div class="timeline-container">
+            <h2 class="section-title">Línea de Tiempo de Noticias</h2>
             
-            <div style="text-align: center;">
-                <a href="#" class="btn btn-outline">Ver Todos los Artículos</a>
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-items">
+                <!-- Noticia 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i> 20 Mayo, 2025
+                            </div>
+                            <span class="news-badge badge-hot">Hot</span>
+                        </div>
+                        
+                        <h3 class="news-title">Google Anuncia Nuevas Herramientas de Desarrollo Web</h3>
+                        <div class="news-meta">
+                            <div class="news-author">
+                                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Autor">
+                                <span>Equipo de Google Devs</span>
+                            </div>
+                            
+                            <div class="news-stats">
+                                <div class="news-stat">
+                                    <i class="far fa-eye"></i> 2.5K
+                                </div>
+                                <div class="news-stat">
+                                    <i class="far fa-comment"></i> 42
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="news-link">
+                            Leer noticia completa <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Noticia 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i> 18 Mayo, 2025
+                            </div>
+                            <span class="news-badge badge-exclusive">Exclusiva</span>
+                        </div>
+                        
+                        <h3 class="news-title">Microsoft Adquiere Startup de Ciberseguridad por $500M</h3>
+                        <div class="news-meta">
+                            <div class="news-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Autor">
+                                <span>Ana Torres</span>
+                            </div>
+                            
+                            <div class="news-stats">
+                                <div class="news-stat">
+                                    <i class="far fa-eye"></i> 3.1K
+                                </div>
+                                <div class="news-stat">
+                                    <i class="far fa-comment"></i> 87
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="news-link">
+                            Leer noticia completa <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Noticia 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i> 15 Mayo, 2025
+                            </div>
+                            <span class="news-badge badge-update">Actualización</span>
+                        </div>
+                        
+                        <h3 class="news-title">GitHub Copilot Lanza Nueva Versión con Soporte para Más Lenguajes</h3>
+                        <div class="news-meta">
+                            <div class="news-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Autor">
+                                <span>Carlos Rodríguez</span>
+                            </div>
+                            
+                            <div class="news-stats">
+                                <div class="news-stat">
+                                    <i class="far fa-eye"></i> 4.2K
+                                </div>
+                                <div class="news-stat">
+                                    <i class="far fa-comment"></i> 156
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="news-link">
+                            Leer noticia completa <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Noticia 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="news-header">
+                            <div class="news-date">
+                                <i class="far fa-calendar-alt"></i> 12 Mayo, 2025
+                            </div>
+                            <span class="news-badge badge-trending">Trending</span>
+                        </div>
+                        
+                        <h3 class="news-title">Nuevo Framework JavaScript Promete 3x Mejor Rendimiento</h3>                        
+                        <div class="news-meta">
+                            <div class="news-author">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Autor">
+                                <span>Miguel Torres</span>
+                            </div>
+                            
+                            <div class="news-stats">
+                                <div class="news-stat">
+                                    <i class="far fa-eye"></i> 5.8K
+                                </div>
+                                <div class="news-stat">
+                                    <i class="far fa-comment"></i> 203
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="news-link">
+                            Leer noticia completa <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -155,7 +277,7 @@
             
             <div class="authors-grid">
                 <div class="author-card">
-                    <img src="assets/images.jpg" alt="Carlos Rodríguez" class="author-avatar">
+                    <img src="assets/images2.jpg" alt="Carlos Rodríguez" class="author-avatar">
                     <h3 class="author-name">Carlos Rodríguez</h3>
                     <p class="author-role">Desarrollador Frontend Senior</p>
                     <p class="author-bio">Especializado en React y Vue.js con más de 8 años de experiencia. Apasionado por la accesibilidad web.</p>
@@ -171,7 +293,7 @@
                 </div>
                 
                 <div class="author-card">
-                    <img src="assets/images2.jpg" alt="Miguel Torres" class="author-avatar">
+                    <img src="assets/images.jpg" alt="Miguel Torres" class="author-avatar">
                     <h3 class="author-name">Miguel Torres</h3>
                     <p class="author-role">Arquitecto de Software</p>
                     <p class="author-bio">Experto en backend con Node.js y Python. Más de 10 años diseñando sistemas escalables y robustos.</p>
@@ -186,8 +308,9 @@
     <div class="container">
         <h2 class="section-title">Categorías Populares</h2>
         
-        <div class="categories-sidebar-wrapper">
-            <div>
+        <div class="categories-content-wrapper">
+            <!-- Columna de contenido principal -->
+            <div class="content-column">
                 <div class="posts-grid">
                     <!-- Post 5 -->
                     <article class="post-card" data-article="5">
@@ -221,8 +344,8 @@
                 </div>
             </div>
             
-            <!-- Sidebar -->
-            <aside class="sidebar-sticky-container">
+            <!-- Columna del sidebar -->
+            <div class="sidebar-column">
                 <div class="sidebar">
                     <h3 class="sidebar-title">Categorías</h3>
                     <ul class="sidebar-list">
@@ -262,7 +385,7 @@
                         <a href="#" class="tag">API</a>
                     </div>
                 </div>
-            </aside>
+            </div>
         </div>
     </div>
 </section>
@@ -300,7 +423,7 @@
                     <h3 class="footer-title">Enlaces Rápidos</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Inicio</a></li>
-                        <li><a href="#blog">Artículos</a></li>
+                        <li><a href="#news-timeline">Noticias</a></li>
                         <li><a href="#categories">Categorías</a></li>
                         <li><a href="#authors">Autores</a></li>
                         <li><a href="#contact">Contacto</a></li>

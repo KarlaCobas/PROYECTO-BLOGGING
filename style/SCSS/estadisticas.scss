@@ -1,5 +1,5 @@
 .stats-section {
-    padding: 5rem 0;
+    @include section-padding;
     background-color: var(--light-color);
 }
 

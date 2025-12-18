@@ -12,18 +12,42 @@
 
 .hero-content {
     flex: 1;
+    @include center-content;
+    text-align: center;
+    
+    @media (max-width: 992px) {
+        text-align: center;
+    }
 }
 
 .hero-title {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     color: var(--secondary-color);
+    text-align: center;
+    width: 100%;
+    
+    @media (max-width: 768px) {
+        font-size: 2.2rem;
+    }
+    
+    @media (max-width: 576px) {
+        font-size: 1.8rem;
+    }
 }
 
 .hero-text {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     color: var(--gray-color);
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 }
 
 .hero-image {

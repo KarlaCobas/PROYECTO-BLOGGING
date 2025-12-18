@@ -10,9 +10,7 @@
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-between;
     height: 100%;
 }
 
@@ -24,10 +22,10 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
 
-    &-icon {
-        color: var(--accent-color);
-    }
+.logo-icon {
+    color: var(--accent-color);
 }
 
 .hamburger-menu {
@@ -38,7 +36,7 @@
     height: 24px;
     cursor: pointer;
     z-index: 1001;
-
+    
     span {
         display: block;
         height: 3px;
@@ -67,7 +65,7 @@
     font-size: 1rem;
     padding: 0.5rem 0;
     position: relative;
-
+    
     &::after {
         content: '';
         position: absolute;
@@ -78,18 +76,18 @@
         left: 0;
         transition: var(--transition);
     }
-
+    
+    &:hover::after {
+        width: 100%;
+    }
+    
     &:hover {
         color: var(--primary-color);
-
-        &::after {
-            width: 100%;
-        }
     }
-
+    
     &.active {
         color: var(--primary-color);
-
+        
         &::after {
             width: 100%;
         }

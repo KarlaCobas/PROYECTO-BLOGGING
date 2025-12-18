@@ -30,16 +30,14 @@
 }
 
 .social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #495057;
     color: white;
     transition: var(--transition);
-
+    
     &:hover {
         background-color: var(--primary-color);
         transform: translateY(-3px);
@@ -54,15 +52,15 @@
 
 .footer-links {
     list-style: none;
-
+    
     li {
         margin-bottom: 0.8rem;
     }
-
+    
     a {
         color: #adb5bd;
         font-size: 0.95rem;
-
+        
         &:hover {
             color: white;
             padding-left: 5px;
