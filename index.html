@@ -3,500 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Digital | Ideas y Tecnología</title>
+    <title>El Observador Global - Noticias Internacionales</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/CSS/main.css">
 </head>
-<body>
-    <!-- Header -->
-    <header class="main-header">
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <i class="fas fa-blog logo-icon"></i>
-                BlogDigital
-            </a>
-            
-            <div class="hamburger-menu" id="hamburgerMenu">
-                <span></span>
-                <span></span>
-                <span></span>
+<body id="inicio">
+    <!-- Header y Navegación -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-globe-americas"></i>
+                <div class="logo-text">
+                    <span>El Observador Global</span>
+                    <span class="logo-subtitle">PERIODISMO IMPARCIAL</span>
+                </div>
             </div>
             
-            <nav class="main-nav" id="mainNav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item"><a href="#news-timeline" class="nav-link">Noticias</a></li>
-                    <li class="nav-item"><a href="#categories" class="nav-link">Categorías</a></li>
-                    <li class="nav-item"><a href="#authors" class="nav-link">Autores</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Explora el mundo de la tecnología y la creatividad</h1>
-                <p class="hero-text">Descubre artículos sobre desarrollo web, diseño, tendencias digitales y mucho más. Únete a nuestra comunidad de escritores y lectores apasionados por la tecnología.</p>
-                <a href="#blog" class="btn btn-primary">Explorar Artículos</a>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Blog sobre tecnología">
+            <div class="nav-container">
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#analisis">Análisis</a></li>
+                        <li><a href="#economia">Economía</a></li>
+                        <li><a href="#tecnologia">Tecnología</a></li>
+                        <li><a href="#ciencia">Ciencia</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="hamburger-menu" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
-    </section>
-
-    <!-- Estadísticas -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number" data-count="250">0</div>
-                    <div class="stat-label">Artículos Publicados</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-count="50">0</div>
-                    <div class="stat-label">Autores Activos</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-count="15000">0</div>
-                    <div class="stat-label">Lectores Mensuales</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-count="12">0</div>
-                    <div class="stat-label">Categorías</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Noticias en Miniatura (nueva) -->
-    <section class="mini-news-section">
-        <div class="container">
-            <h2 class="section-title">Noticias Destacadas</h2>
-            <div class="mini-news-grid">
-                <!-- Noticia 1 -->
-                <div class="mini-news-card">
-                    <div class="mini-news-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <div class="mini-news-content">
-                        <h3 class="mini-news-title">Lanzamiento de Nueva Versión de React</h3>
-                        <p class="mini-news-excerpt">React 19 trae mejoras significativas en el rendimiento y nuevas APIs para desarrolladores.</p>
-                        <div class="mini-news-time">
-                            <i class="far fa-clock"></i> Hace 2 horas
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Noticia 2 -->
-                <div class="mini-news-card">
-                    <div class="mini-news-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="mini-news-content">
-                        <h3 class="mini-news-title">Tendencias de IA para 2025</h3>
-                        <p class="mini-news-excerpt">Los modelos generativos continuarán dominando el panorama tecnológico este año.</p>
-                        <div class="mini-news-time">
-                            <i class="far fa-clock"></i> Hace 5 horas
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Noticia 3 -->
-                <div class="mini-news-card">
-                    <div class="mini-news-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="mini-news-content">
-                        <h3 class="mini-news-title">Nuevas Vulnerabilidades en WordPress</h3>
-                        <p class="mini-news-excerpt">Se han descubierto vulnerabilidades críticas en plugins populares de WordPress.</p>
-                        <div class="mini-news-time">
-                            <i class="far fa-clock"></i> Ayer
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Timeline de Noticias (nueva) -->
-    <section class="timeline-section" id="news-timeline">
-        <div class="timeline-container">
-            <h2 class="section-title">Línea de Tiempo de Noticias</h2>
-            
-            <div class="timeline-line"></div>
-            
-            <div class="timeline-items">
-                <!-- Noticia 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="news-header">
-                            <div class="news-date">
-                                <i class="far fa-calendar-alt"></i> 20 Mayo, 2025
-                            </div>
-                            <span class="news-badge badge-hot">Hot</span>
-                        </div>
-                        
-                        <h3 class="news-title">Google Anuncia Nuevas Herramientas de Desarrollo Web</h3>
-                        <div class="news-meta">
-                            <div class="news-author">
-                                <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Autor">
-                                <span>Equipo de Google Devs</span>
-                            </div>
-                            
-                            <div class="news-stats">
-                                <div class="news-stat">
-                                    <i class="far fa-eye"></i> 2.5K
-                                </div>
-                                <div class="news-stat">
-                                    <i class="far fa-comment"></i> 42
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="news-link">
-                            Leer noticia completa <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Noticia 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="news-header">
-                            <div class="news-date">
-                                <i class="far fa-calendar-alt"></i> 18 Mayo, 2025
-                            </div>
-                            <span class="news-badge badge-exclusive">Exclusiva</span>
-                        </div>
-                        
-                        <h3 class="news-title">Microsoft Adquiere Startup de Ciberseguridad por $500M</h3>
-                        <div class="news-meta">
-                            <div class="news-author">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Autor">
-                                <span>Ana Torres</span>
-                            </div>
-                            
-                            <div class="news-stats">
-                                <div class="news-stat">
-                                    <i class="far fa-eye"></i> 3.1K
-                                </div>
-                                <div class="news-stat">
-                                    <i class="far fa-comment"></i> 87
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="news-link">
-                            Leer noticia completa <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Noticia 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="news-header">
-                            <div class="news-date">
-                                <i class="far fa-calendar-alt"></i> 15 Mayo, 2025
-                            </div>
-                            <span class="news-badge badge-update">Actualización</span>
-                        </div>
-                        
-                        <h3 class="news-title">GitHub Copilot Lanza Nueva Versión con Soporte para Más Lenguajes</h3>
-                        <div class="news-meta">
-                            <div class="news-author">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Autor">
-                                <span>Carlos Rodríguez</span>
-                            </div>
-                            
-                            <div class="news-stats">
-                                <div class="news-stat">
-                                    <i class="far fa-eye"></i> 4.2K
-                                </div>
-                                <div class="news-stat">
-                                    <i class="far fa-comment"></i> 156
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="news-link">
-                            Leer noticia completa <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Noticia 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="news-header">
-                            <div class="news-date">
-                                <i class="far fa-calendar-alt"></i> 12 Mayo, 2025
-                            </div>
-                            <span class="news-badge badge-trending">Trending</span>
-                        </div>
-                        
-                        <h3 class="news-title">Nuevo Framework JavaScript Promete 3x Mejor Rendimiento</h3>                        
-                        <div class="news-meta">
-                            <div class="news-author">
-                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Autor">
-                                <span>Miguel Torres</span>
-                            </div>
-                            
-                            <div class="news-stats">
-                                <div class="news-stat">
-                                    <i class="far fa-eye"></i> 5.8K
-                                </div>
-                                <div class="news-stat">
-                                    <i class="far fa-comment"></i> 203
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="news-link">
-                            Leer noticia completa <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Autores Destacados -->
-    <section class="authors-section" id="authors">
-        <div class="container">
-            <h2 class="section-title">Autores Destacados</h2>
-            
-            <div class="authors-grid">
-                <div class="author-card">
-                    <img src="assets/images2.jpg" alt="Carlos Rodríguez" class="author-avatar">
-                    <h3 class="author-name">Carlos Rodríguez</h3>
-                    <p class="author-role">Desarrollador Frontend Senior</p>
-                    <p class="author-bio">Especializado en React y Vue.js con más de 8 años de experiencia. Apasionado por la accesibilidad web.</p>
-                    <a href="#" class="btn btn-outline">Ver Artículos</a>
-                </div>
-                
-                <div class="author-card">
-                    <img src="assets/1600w-CBK6b64Ms7w.jpg" alt="Laura Méndez" class="author-avatar">
-                    <h3 class="author-name">Laura Méndez</h3>
-                    <p class="author-role">Diseñadora UX/UI</p>
-                    <p class="author-bio">Con 6 años de experiencia en diseño de interfaces y experiencia de usuario. Enfoque en diseño centrado en el usuario.</p>
-                    <a href="#" class="btn btn-outline">Ver Artículos</a>
-                </div>
-                
-                <div class="author-card">
-                    <img src="assets/images.jpg" alt="Miguel Torres" class="author-avatar">
-                    <h3 class="author-name">Miguel Torres</h3>
-                    <p class="author-role">Arquitecto de Software</p>
-                    <p class="author-bio">Experto en backend con Node.js y Python. Más de 10 años diseñando sistemas escalables y robustos.</p>
-                    <a href="#" class="btn btn-outline">Ver Artículos</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- Categorías y Sidebar -->
-<section class="categories-section" id="categories">
-    <div class="container">
-        <h2 class="section-title">Categorías Populares</h2>
         
-        <div class="categories-content-wrapper">
-            <!-- Columna de contenido principal -->
-            <div class="content-column">
-                <div class="posts-grid">
-                    <!-- Post 5 -->
-                    <article class="post-card" data-article="5">
-                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Node.js" class="post-image">
-                        <div class="post-content">
-                            <span class="post-category">Backend</span>
-                            <h3 class="post-title"><a href="#" class="article-link">Construyendo APIs RESTful con Node.js y Express</a></h3>
-                            <p class="post-excerpt">Guía completa para desarrollar APIs robustas y escalables utilizando Node.js y Express, con buenas prácticas y patrones de diseño.</p>
-                            <div class="post-meta">
-                                <span><i class="far fa-calendar"></i> 24 Abril, 2025</span>
-                                <span><i class="far fa-comment"></i> 10 comentarios</span>
-                            </div>
-                            <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
-                        </div>
-                    </article>
-                    
-                    <!-- Post 6 -->
-                    <article class="post-card" data-article="6">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Data Science" class="post-image">
-                        <div class="post-content">
-                            <span class="post-category">Ciencia de Datos</span>
-                            <h3 class="post-title"><a href="#" class="article-link">Introducción al Machine Learning para Desarrolladores</a></h3>
-                            <p class="post-excerpt">Conceptos fundamentales de machine learning aplicados al desarrollo de software, con ejemplos prácticos y librerías populares.</p>
-                            <div class="post-meta">
-                                <span><i class="far fa-calendar"></i> 17 Abril, 2025</span>
-                                <span><i class="far fa-comment"></i> 7 comentarios</span>
-                            </div>
-                            <button class="btn btn-outline read-more-btn article-link">Leer Resumen</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            
-            <!-- Columna del sidebar -->
-            <div class="sidebar-column">
-                <div class="sidebar">
-                    <h3 class="sidebar-title">Categorías</h3>
-                    <ul class="sidebar-list">
-                        <li><a href="#">Desarrollo Web</a></li>
-                        <li><a href="#">Diseño UI/UX</a></li>
-                        <li><a href="#">Frameworks JavaScript</a></li>
-                        <li><a href="#">Backend Development</a></li>
-                        <li><a href="#">Ciencia de Datos</a></li>
-                        <li><a href="#">DevOps</a></li>
-                        <li><a href="#">Mobile Development</a></li>
-                        <li><a href="#">Seguridad Informática</a></li>
-                        <li><a href="#">Cloud Computing</a></li>
-                    </ul>
-                </div>
-                
-                <div class="sidebar">
-                    <h3 class="sidebar-title">Artículos Populares</h3>
-                    <ul class="sidebar-list">
-                        <li><a href="#" class="article-link">10 Herramientas Esenciales para Desarrolladores en 2025</a></li>
-                        <li><a href="#" class="article-link">Cómo Mejorar el SEO de Tu Aplicación Web</a></li>
-                        <li><a href="#" class="article-link">Guía Completa de Flexbox y CSS Grid</a></li>
-                        <li><a href="#" class="article-link">Introducción a Docker para Desarrolladores</a></li>
-                        <li><a href="#" class="article-link">Buenas Prácticas de Código Limpio en JavaScript</a></li>
-                    </ul>
-                </div>
-                
-                <div class="sidebar">
-                    <h3 class="sidebar-title">Tags Populares</h3>
-                    <div class="tags-container">
-                        <a href="#" class="tag">JavaScript</a>
-                        <a href="#" class="tag">React</a>
-                        <a href="#" class="tag">CSS</a>
-                        <a href="#" class="tag">Node.js</a>
-                        <a href="#" class="tag">Python</a>
-                        <a href="#" class="tag">Diseño</a>
-                        <a href="#" class="tag">Accesibilidad</a>
-                        <a href="#" class="tag">API</a>
-                    </div>
-                </div>
-            </div>
+        <div class="mobile-nav">
+            <button class="close-menu" aria-label="Cerrar menú">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#analisis">Análisis</a></li>
+                <li><a href="#economia">Economía</a></li>
+                <li><a href="#tecnologia">Tecnología</a></li>
+                <li><a href="#ciencia">Ciencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-overlay"></div>
+    </header>
+    
+    <div class="breaking-news">
+        <div class="container">
+            <i class="fas fa-exclamation-circle"></i> ÚLTIMA HORA: Cumbre climática alcanza acuerdo histórico para reducir emisiones en un 45% para 2030
         </div>
     </div>
-</section>
-
-    <!-- Newsletter -->
-    <section class="newsletter-section" id="newsletter">
-        <div class="container newsletter-container">
-            <h2 class="newsletter-title">Suscríbete a Nuestro Newsletter</h2>
-            <p class="newsletter-text">Recibe los últimos artículos, tutoriales y noticias sobre tecnología directamente en tu correo. Sin spam, solo contenido de calidad.</p>
-            
-            <form class="newsletter-form">
-                <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
-                <button type="submit" class="btn btn-primary">Suscribirse</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer" id="contact">
-        <div class="container">
-            <div class="footer-container">
-                <div>
-                    <a href="#" class="footer-logo">BlogDigital</a>
-                    <p class="footer-text">Un espacio para compartir conocimiento sobre desarrollo web, diseño y tecnología. Creemos en el poder de compartir ideas para impulsar la innovación.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+    
+    <!-- Slider de Noticias Destacadas -->
+    <section class="slider-container container">
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Cumbre internacional">
+                <div class="slide-content">
+                    <span class="slide-tag">Internacional</span>
+                    <h2 class="slide-title">Líderes mundiales se reúnen en la Cumbre del G20 para abordar crisis energética global</h2>
+                    <div class="slide-meta">
+                        <span>Hace 2 horas</span>
+                        <span>42 comentarios</span>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Investigación científica">
+                <div class="slide-content">
+                    <span class="slide-tag">Ciencia</span>
+                    <h2 class="slide-title">Avance médico: científicos desarrollan nueva terapia génica para enfermedades neurodegenerativas</h2>
+                    <div class="slide-meta">
+                        <span>Hace 5 horas</span>
+                        <span>28 comentarios</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Economía global">
+                <div class="slide-content">
+                    <span class="slide-tag">Economía</span>
+                    <h2 class="slide-title">FMI revisa a la baja pronósticos de crecimiento global para 2024 ante persistente inflación</h2>
+                    <div class="slide-meta">
+                        <span>Hace 1 día</span>
+                        <span>67 comentarios</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider-controls">
+            <div class="slider-dot active" data-slide="0"></div>
+            <div class="slider-dot" data-slide="1"></div>
+            <div class="slider-dot" data-slide="2"></div>
+        </div>
+    </section>
+    
+    <!-- Sección de Noticias Recientes -->
+    <section class="news-section container" id="noticias">
+        <h2 class="section-title">Noticias de Hoy</h2>
+        
+        <div class="news-grid">
+            <!-- Artículo 1 -->
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Conflicto diplomático">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Política Internacional</span>
+                    <div class="article-meta">
+                        <span class="article-date">15 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 24</span>
+                    </div>
+                    <h3 class="article-title">Tensión diplomática aumenta entre potencias tras sanciones económicas recíprocas</h3>
+                    <p class="article-summary">Analistas advierten sobre posibles repercusiones en el comercio global tras la imposición de nuevas medidas restrictivas entre bloques económicos.</p>
+                    <a href="#" class="read-more">Leer análisis completo →</a>
+                    <div class="article-source">Fuente: Departamento de Estado</div>
+                </div>
+            </article>
+            
+            <!-- Artículo 2 -->
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tecnología emergente">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Tecnología</span>
+                    <div class="article-meta">
+                        <span class="article-date">14 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 51</span>
+                    </div>
+                    <h3 class="article-title">Inteligencia Artificial logra diagnóstico médico con mayor precisión que especialistas humanos</h3>
+                    <p class="article-summary">Estudio publicado en Nature Medicine demuestra que algoritmos de IA pueden detectar condiciones complejas con un 98% de precisión en pruebas clínicas.</p>
+                    <a href="#" class="read-more">Leer estudio completo →</a>
+                    <div class="article-source">Fuente: Nature Medicine</div>
+                </div>
+            </article>
+            
+            <!-- Artículo 3 -->
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Cambio climático">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Medio Ambiente</span>
+                    <div class="article-meta">
+                        <span class="article-date">13 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 33</span>
+                    </div>
+                    <h3 class="article-title">Nuevos datos satelitales revelan aceleración del deshielo en Groenlandia</h3>
+                    <p class="article-summary">Investigación de la NASA muestra que la pérdida de masa de hielo se ha duplicado en la última década, con implicaciones graves para el nivel del mar global.</p>
+                    <a href="#" class="read-more">Ver datos completos →</a>
+                    <div class="article-source">Fuente: NASA Earth Observatory</div>
+                </div>
+            </article>
+            
+            <!-- Artículo 4 -->
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mercados financieros">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Economía</span>
+                    <div class="article-meta">
+                        <span class="article-date">12 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 18</span>
+                    </div>
+                    <h3 class="article-title">Bancos centrales coordinan acciones para estabilizar mercados ante volatilidad cambiaria</h3>
+                    <p class="article-summary">La Reserva Federal, el BCE y otros bancos centrales anuncian medidas conjuntas para prevenir fluctuaciones bruscas en las principales divisas mundiales.</p>
+                    <a href="#" class="read-more">Ver análisis de mercado →</a>
+                    <div class="article-source">Fuente: Bloomberg Economics</div>
+                </div>
+            </article>
+            
+            <!-- Artículo 5 -->
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Avance científico">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Ciencia</span>
+                    <div class="article-meta">
+                        <span class="article-date">11 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 29</span>
+                    </div>
+                    <h3 class="article-title">Físicos del CERN anuncian descubrimiento de nueva partícula subatómica</h3>
+                    <p class="article-summary">El hallazgo podría proporcionar pistas cruciales sobre la materia oscura y las fuerzas fundamentales que gobiernan el universo.</p>
+                    <a href="#" class="read-more">Leer investigación →</a>
+                    <div class="article-source">Fuente: CERN</div>
+                </div>
+            </article>
+            
+            <!-- Artículo 6 -->
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1551135049-8a33b2cce2e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Cumbre educativa">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Educación</span>
+                    <div class="article-meta">
+                        <span class="article-date">10 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 47</span>
+                    </div>
+                    <h3 class="article-title">UNESCO presenta plan global para reducir brecha educativa post-pandemia</h3>
+                    <p class="article-summary">La iniciativa busca asegurar que 100 millones de niños afectados por el cierre de escuelas recuperen sus niveles de aprendizaje previos a la COVID-19.</p>
+                    <a href="#" class="read-more">Ver plan educativo →</a>
+                    <div class="article-source">Fuente: UNESCO</div>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Sección de Análisis -->
+    <section class="container other-sections" id="analisis">
+        <div class="section-card">
+            <h3><i class="fas fa-chart-line"></i> Análisis Destacados</h3>
+            <ul>
+                <li><a href="#">Implicaciones geopolíticas de la transición energética mundial</a></li>
+                <li><a href="#">El futuro del trabajo: cómo la IA transformará las profesiones en la próxima década</a></li>
+                <li><a href="#">Análisis: ¿Está Europa preparada para una recesión económica?</a></li>
+                <li><a href="#">Ciberseguridad en la era de la guerra híbrida: desafíos y soluciones</a></li>
+                <li><a href="#">El ascenso de Asia: cambio en el equilibrio de poder global</a></li>
+            </ul>
+        </div>
+        
+        <div class="section-card" id="economia">
+            <h3><i class="fas fa-newspaper"></i> Economía</h3>
+            <ul>
+                <li><a href="#"><strong>Crisis Energética</strong> (24 artículos)</a></li>
+                <li><a href="#"><strong>Mercados Financieros</strong> (18 artículos)</a></li>
+                <li><a href="#"><strong>Comercio Internacional</strong> (31 artículos)</a></li>
+                <li><a href="#"><strong>Política Monetaria</strong> (27 artículos)</a></li>
+                <li><a href="#"><strong>Economía Mundial</strong> (42 artículos)</a></li>
+                <li><a href="#"><strong>Desarrollo Sostenible</strong> (19 artículos)</a></li>
+            </ul>
+        </div>
+        
+        <div class="section-card" id="tecnologia">
+            <h3><i class="fas fa-laptop-code"></i> Tecnología</h3>
+            <ul>
+                <li><a href="#">Inteligencia Artificial y su impacto en la sociedad</a></li>
+                <li><a href="#">Ciberseguridad: nuevas amenazas y soluciones</a></li>
+                <li><a href="#">El futuro de las telecomunicaciones 6G</a></li>
+                <li><a href="#">Blockchain más allá de las criptomonedas</a></li>
+                <li><a href="#">Innovación en startups tecnológicas 2025</a></li>
+                <li><a href="#">Tecnología verde y sostenibilidad</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Sección de Ciencia -->
+    <section class="container news-section" id="ciencia">
+        <h2 class="section-title">Últimos Descubrimientos Científicos</h2>
+        <div class="news-grid">
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Investigación espacial">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Astronomía</span>
+                    <div class="article-meta">
+                        <span class="article-date">9 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 31</span>
+                    </div>
+                    <h3 class="article-title">Nuevo exoplaneta descubierto en zona habitable de su estrella</h3>
+                    <p class="article-summary">El telescopio James Webb identifica un planeta con condiciones potenciales para albergar vida a 120 años luz de la Tierra.</p>
+                    <a href="#" class="read-more">Leer investigación →</a>
+                    <div class="article-source">Fuente: NASA</div>
+                </div>
+            </article>
+            
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Investigación médica">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Medicina</span>
+                    <div class="article-meta">
+                        <span class="article-date">8 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 22</span>
+                    </div>
+                    <h3 class="article-title">Nueva vacuna muestra efectividad del 95% contra variantes emergentes</h3>
+                    <p class="article-summary">Ensayo clínico internacional confirma la eficacia de la nueva formulación vacunal contra múltiples variantes virales.</p>
+                    <a href="#" class="read-more">Ver resultados →</a>
+                    <div class="article-source">Fuente: The Lancet</div>
+                </div>
+            </article>
+            
+            <article class="news-article">
+                <div class="article-image">
+                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Investigación climática">
+                </div>
+                <div class="article-content">
+                    <span class="article-tag">Climatología</span>
+                    <div class="article-meta">
+                        <span class="article-date">7 de junio, 2025</span>
+                        <span class="article-comments"><i class="far fa-comment"></i> 19</span>
+                    </div>
+                    <h3 class="article-title">Nuevo modelo climático predice cambios más acelerados de lo estimado</h3>
+                    <p class="article-summary">Investigadores desarrollan modelo que incorpora nuevos factores de retroalimentación en el sistema climático terrestre.</p>
+                    <a href="#" class="read-more">Estudiar modelo →</a>
+                    <div class="article-source">Fuente: Nature Climate Change</div>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-globe-americas"></i>
+                        El Observador Global
+                    </div>
+                    <p class="footer-description">
+                        Fundado en 1995, El Observador Global es una fuente confiable de noticias internacionales, análisis profundos y reportajes investigativos. Nuestro compromiso es con la verdad, la precisión y el periodismo ético.
+                    </p>
+                </div>
                 
-                <div>
-                    <h3 class="footer-title">Enlaces Rápidos</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#news-timeline">Noticias</a></li>
-                        <li><a href="#categories">Categorías</a></li>
-                        <li><a href="#authors">Autores</a></li>
-                        <li><a href="#contact">Contacto</a></li>
+                <div class="footer-links">
+                    <h4>Secciones</h4>
+                    <ul>
+                        <li><a href="#inicio">Portada</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#analisis">Análisis</a></li>
+                        <li><a href="#economia">Economía</a></li>
+                        <li><a href="#tecnologia">Tecnología</a></li>
+                        <li><a href="#ciencia">Ciencia</a></li>
                     </ul>
                 </div>
                 
-                <div>
-                    <h3 class="footer-title">Categorías</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Desarrollo Web</a></li>
-                        <li><a href="#">Diseño UI/UX</a></li>
-                        <li><a href="#">Backend</a></li>
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Ciencia de Datos</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="footer-title">Contacto</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> info@blogdigital.com</li>
-                        <li><i class="fas fa-phone"></i> +34 912 345 678</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Madrid, España</li>
-                    </ul>
+                <div class="footer-social">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Madrid, España</p>
+                        <p><i class="fas fa-phone"></i> +34 91 123 45 67</p>
+                        <p><i class="fas fa-envelope"></i> contacto@observadorglobal.com</p>
+                    </div>
+                    <h4 style="margin-top: 20px;">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 BlogDigital. Todos los derechos reservados.</p>
+                &copy; 2025 El Observador Global. Todos los derechos reservados. | 
+                <a href="#" style="color: #cbd5e0; text-decoration: underline;">Política de privacidad</a> | 
+                <a href="#" style="color: #cbd5e0; text-decoration: underline;">Términos de uso</a> | 
+                <a href="#" style="color: #cbd5e0; text-decoration: underline;">Código de ética periodística</a>
             </div>
         </div>
     </footer>
-
-    <!-- Modal para artículos -->
-    <div class="modal-overlay" id="articleModal">
-        <div class="modal">
-            <button class="modal-close" id="modalClose">&times;</button>
-            
-            <div class="modal-header">
-                <span class="modal-category" id="modalCategory">Desarrollo Web</span>
-                <h2 class="modal-title" id="modalTitle">Tendencias de Desarrollo Frontend en 2025</h2>
-                <div class="modal-meta">
-                    <span><i class="far fa-calendar"></i> <span id="modalDate">15 Mayo, 2025</span></span>
-                    <span><i class="far fa-user"></i> <span id="modalAuthor">Carlos Rodríguez</span></span>
-                    <span><i class="far fa-comment"></i> <span id="modalComments">12 comentarios</span></span>
-                </div>
-            </div>
-            
-            <div class="modal-body">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Imagen del artículo" class="modal-image" id="modalImage">
-                
-                <div class="modal-content" id="modalContent">
-                    <p>El desarrollo frontend continúa evolucionando a un ritmo acelerado, y 2025 no es la excepción. En este artículo exploramos las tendencias más importantes que están moldeando el futuro del desarrollo web.</p>
-                    
-                    <h3>Frameworks y Librerías</h3>
-                    <p>React, Vue.js y Angular siguen dominando el ecosistema frontend, pero cada vez vemos más adopción de frameworks más nuevos como Svelte y Solid.js, que prometen mejor rendimiento y una experiencia de desarrollo más simple.</p>
-                    
-                    <h3>Herramientas de Desarrollo</h3>
-                    <p>Vite se ha consolidado como el bundler preferido por muchos desarrolladores, reemplazando a Webpack en muchos proyectos nuevos gracias a su velocidad y configuración simplificada.</p>
-                    
-                    <p>Además, TypeScript continúa ganando popularidad, con más del 80% de los desarrolladores encuestados indicando que lo utilizan en sus proyectos principales.</p>
-                    
-                    <p>Estas son solo algunas de las tendencias que están definiendo el desarrollo frontend en 2025. Para mantenerse competitivo, es crucial estar al tanto de estas evoluciones y adaptarse continuamente.</p>
-                </div>
-            </div>
-            
-            <div class="modal-footer">
-                <button class="btn btn-outline" id="closeModal">Cerrar</button>
-                <a href="#" class="btn btn-primary" id="fullArticleLink">Leer Artículo Completo</a>
-            </div>
-        </div>
-    </div>
-
+    
     <script src="JavaScript/script.js"></script>
 </body>
 </html>
