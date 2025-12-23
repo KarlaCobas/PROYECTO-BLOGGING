@@ -12,4 +12,16 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   --border-radius: 6px;
   --transition: all 0.3s ease;
+  --nav-bg: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+  --nav-bg-scrolled: rgba(26, 54, 93, 0.98);
+  --nav-text: #ffffff;
+  --nav-hover: #a0d2ff;
+  --nav-active: #3182ce;
+  --nav-border: rgba(255, 255, 255, 0.15);
+  --nav-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --nav-height: 80px;
+  --nav-height-mobile: 70px;
+  --text-primary: #1a202c;
+  --text-secondary: #2d3748;
+  --text-light: #ffffff;
 }/*# sourceMappingURL=variables.css.map */

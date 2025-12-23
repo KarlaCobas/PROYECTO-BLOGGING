@@ -15,37 +15,141 @@
 
     &:hover {
         transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.12);
     }
 
     h3 {
         font-size: 1.5rem;
         margin-bottom: 20px;
-        color: $primary;
+        color: $text-primary;
         display: flex;
         align-items: center;
         gap: 10px;
-        font-weight: 700;
+        font-weight: 800;
 
+        padding-bottom: 12px;
+        border-bottom: 2px solid $accent-light;
+        
         i {
             color: $accent;
         }
     }
 
     ul li {
-        padding: 10px 0;
+        padding: 12px 0;
         border-bottom: 1px solid $light-gray;
+        transition: padding-left 0.2s ease;
 
         &:last-child {
             border-bottom: none;
         }
 
+        &:hover {
+            padding-left: 8px;
+            
+            a {
+                color: $accent;
+                
+                .article-count {
+                    background-color: $accent-light;
+                    color: $primary;
+                }
+            }
+        }
+
         a {
             transition: $transition;
             display: block;
-
-            &:hover {
-                color: $accent;
+            color: $text-secondary;
+            font-weight: 500;
+            line-height: 1.4;
+            font-size: 0.95rem;
+            
+            strong {
+                color: $text-primary;
+                font-weight: 700;
+            }
+            
+            .article-count {
+                font-size: 0.8rem;
+                font-weight: 400;
+                margin-left: 5px;
+                padding: 2px 8px;
+                border-radius: 10px;
+                background-color: $light-gray;
+                color: $gray;
+                transition: all 0.2s ease;
             }
         }
+    }
+}
+
+#analisis .section-card {
+    background-color: lighten($light-gray, 3%);
+    border-color: $accent-light;
+    
+    h3 {
+        color: $primary;
+        
+        i {
+            color: $primary-light;
+        }
+    }
+    
+    ul li a:hover {
+        color: $primary-light;
+    }
+}
+
+#economia .section-card {
+    background-color: lighten(#e6f7ed, 3%);
+    border-color: #bbf7d0;
+    
+    h3 {
+        color: #065f46;
+        
+        i {
+            color: #059669;
+        }
+    }
+    
+    ul li {
+        a {
+            color: #047857;
+            
+            strong {
+                color: #064e3b;
+            }
+            
+            .article-count {
+                background-color: #d1fae5;
+                color: #065f46;
+            }
+        }
+        
+        &:hover a {
+            color: #064e3b;
+            
+            .article-count {
+                background-color: #bbf7d0;
+            }
+        }
+    }
+}
+
+#tecnologia .section-card {
+    background-color: lighten($accent-light, 15%);
+    border-color: $accent-light;
+    
+    h3 {
+        color: $primary-light;
+        
+        i {
+            color: $accent;
+        }
+    }
+    
+    ul li a:hover {
+        color: $primary;
     }
 }

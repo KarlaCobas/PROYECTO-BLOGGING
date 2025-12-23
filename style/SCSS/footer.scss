@@ -1,6 +1,6 @@
 footer {
     background-color: $primary;
-    color: white;
+    color: $text-light;
     padding: 40px 0 20px;
     margin-top: 40px;
 
@@ -15,7 +15,7 @@ footer {
         .footer-logo {
             font-size: 1.8rem;
             font-weight: bold;
-            color: white;
+            color: $text-light;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
@@ -23,7 +23,7 @@ footer {
         }
 
         .footer-description {
-            color: #cbd5e0;
+            color: $accent-light;
             font-size: 0.95rem;
             line-height: 1.6;
         }
@@ -33,7 +33,7 @@ footer {
         h4 {
             font-size: 1.2rem;
             margin-bottom: 20px;
-            color: white;
+            color: $text-light;
         }
 
         ul li {
@@ -41,10 +41,10 @@ footer {
 
             a {
                 transition: $transition;
-                color: #cbd5e0;
+                color: $accent-light;
 
                 &:hover {
-                    color: white;
+                    color: $text-light;
                     padding-left: 5px;
                 }
             }
@@ -55,7 +55,7 @@ footer {
         h4 {
             font-size: 1.2rem;
             margin-bottom: 20px;
-            color: white;
+            color: $text-light;
         }
 
         .social-icons {
@@ -70,11 +70,13 @@ footer {
                 height: 40px;
                 background-color: rgba(255,255,255,0.1);
                 border-radius: 50%;
+                color: $text-light;
                 transition: $transition;
 
                 &:hover {
                     background-color: $accent;
                     transform: translateY(-5px);
+                    color: $text-light;
                 }
             }
         }
@@ -84,7 +86,16 @@ footer {
         text-align: center;
         padding-top: 20px;
         border-top: 1px solid rgba(255,255,255,0.1);
-        color: #cbd5e0;
+        color: $accent-light;
         font-size: 0.9rem;
+        
+        a {
+            color: $accent-light;
+            text-decoration: underline;
+            
+            &:hover {
+                color: $text-light;
+            }
+        }
     }
 }
