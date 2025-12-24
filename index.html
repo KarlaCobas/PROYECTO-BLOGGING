@@ -57,55 +57,56 @@
         </div>
     </div>
     
-    <!-- Slider de Noticias Destacadas -->
-    <section class="slider-container container">
-        <div class="slider">
-            <!-- Slide 1 -->
-            <div class="slide">
-                <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Cumbre internacional">
-                <div class="slide-content">
-                    <span class="slide-tag">Internacional</span>
-                    <h2 class="slide-title">Líderes mundiales se reúnen en la Cumbre del G20 para abordar crisis energética global</h2>
-                    <div class="slide-meta">
-                        <span>Hace 2 horas</span>
-                        <span>42 comentarios</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Slide 2 -->
-            <div class="slide">
-                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Investigación científica">
-                <div class="slide-content">
-                    <span class="slide-tag">Ciencia</span>
-                    <h2 class="slide-title">Avance médico: científicos desarrollan nueva terapia génica para enfermedades neurodegenerativas</h2>
-                    <div class="slide-meta">
-                        <span>Hace 5 horas</span>
-                        <span>28 comentarios</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Slide 3 -->
-            <div class="slide">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Economía global">
-                <div class="slide-content">
-                    <span class="slide-tag">Economía</span>
-                    <h2 class="slide-title">FMI revisa a la baja pronósticos de crecimiento global para 2024 ante persistente inflación</h2>
-                    <div class="slide-meta">
-                        <span>Hace 1 día</span>
-                        <span>67 comentarios</span>
-                    </div>
+<!-- Slider de Noticias Destacadas - Versión Simple -->
+<section class="simple-slider-container">
+    <div class="simple-slider">
+        <!-- Slide 1 -->
+        <div class="simple-slide active">
+            <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Cumbre internacional">
+            <div class="simple-slide-content">
+                <span class="slide-tag">Internacional</span>
+                <h2 class="slide-title">Líderes mundiales se reúnen en la Cumbre del G20 para abordar crisis energética global</h2>
+                <div class="slide-meta">
+                    <span><i class="far fa-clock"></i> Hace 2 horas</span>
+                    <span><i class="far fa-comment"></i> 42 comentarios</span>
                 </div>
             </div>
         </div>
         
-        <div class="slider-controls">
-            <div class="slider-dot active" data-slide="0"></div>
-            <div class="slider-dot" data-slide="1"></div>
-            <div class="slider-dot" data-slide="2"></div>
+        <!-- Slide 2 -->
+        <div class="simple-slide">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Investigación científica">
+            <div class="simple-slide-content">
+                <span class="slide-tag">Ciencia</span>
+                <h2 class="slide-title">Avance médico: científicos desarrollan nueva terapia génica para enfermedades neurodegenerativas</h2>
+                <div class="slide-meta">
+                    <span><i class="far fa-clock"></i> Hace 5 horas</span>
+                    <span><i class="far fa-comment"></i> 28 comentarios</span>
+                </div>
+            </div>
         </div>
-    </section>
+        
+        <!-- Slide 3 -->
+        <div class="simple-slide">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Economía global">
+            <div class="simple-slide-content">
+                <span class="slide-tag">Economía</span>
+                <h2 class="slide-title">FMI revisa a la baja pronósticos de crecimiento global para 2024 ante persistente inflación</h2>
+                <div class="slide-meta">
+                    <span><i class="far fa-clock"></i> Hace 1 día</span>
+                    <span><i class="far fa-comment"></i> 67 comentarios</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Indicadores -->
+    <div class="slider-indicators">
+        <span class="indicator active" data-index="0"></span>
+        <span class="indicator" data-index="1"></span>
+        <span class="indicator" data-index="2"></span>
+    </div>
+</section>
     
     <!-- Sección de Noticias Recientes -->
     <section class="news-section container" id="noticias">
